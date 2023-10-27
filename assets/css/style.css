@@ -4,22 +4,18 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color:  #333;
-}
-header{
-    width: 100vw;
-    height: 100vh;
-    background-image: url("../images/header.png");
-    background-size:cover;
-    border-radius: 11px;
-    position: relative;
+    background-color: #f0f0f0;
 }
 nav{
     width:100vw;
-    height: 20vh;
+    position: fixed;
+    z-index: 2;
+    background-color: #f0f0f0;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 30px 70px;
+    padding: 20px 5vw;
+    
 }
 nav h1{
     color: #054C73;
@@ -39,11 +35,16 @@ a{
 }
 .hero{
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    background-image: url("../images/header.png");
+    background-size:cover;
+    border-radius: 11px;
+    position: relative;
 }
 .hero-text{
     padding: 40px;
-    width:46%;
+    width:46vw;
+    height: 65.65vh;
     background-color: #DFE9F4;
     border-radius: 10px;
     position: absolute;
@@ -80,14 +81,14 @@ a{
     font-size: 1rem;
 }
 .icons{
-    padding: 45px 0;
+    padding:40px 0;
     width:100vw;
     background-color: #F2F5FF;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 80px ;
 }
 .icon{
     display: flex;
@@ -274,9 +275,9 @@ background-color: #FFF;
     gap: 25px;
 }
 @media screen  and (max-width: 992px){
-
         nav ul{
-            display:none; 
+            display:none;
+        
         }
         .list{
             display:block;
@@ -291,12 +292,6 @@ background-color: #FFF;
             background: none;
             position: absolute;
             top: 20%;
-        }
-        
-            nav{
-            padding:20px 20px ;
-            align-items: flex-start;
-            gap: 80px;    
         }
         .img22{
             width: 300px;
